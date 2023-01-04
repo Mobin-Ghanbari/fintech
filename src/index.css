@@ -1,13 +1,175 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* overflow-x: hidden; */
+  max-width: 100%;
+  color: #817f83;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.bg-up {
+  background-color: #392867;
+  height: 50px;
 }
+/* custom css style */
+.font {
+  font-size: 13px;
+  }
+  .font-11 {
+  font-size: 11px;
+  }
+  .font-9 {
+    font-size: 9px;
+  }
+  .c-color {
+    color: #8860f5;
+  }
+  .rnd{
+    border-radius: 0 5px 5px 0;
+  }
+  .custom-color {
+    background-color: #8860f5;
+  }
+  
+  .custom-border {
+    border-left: 32px solid #AF94F8;
+  
+  }
+  .custom-border2 {
+    border-left: 32px solid #8cdad7
+    ;
+  
+  }
+  .text-success{
+    color: rgb(61, 216, 162)!important; 
+  }
+  
+  .custom-img {
+   
+    max-width: 100%;
+    height: 40%;
+    object-fit: fill;
+    transform: scaleX(-1);
+  border-radius: 5px 5px 0 0;
+  
+  }
+  .custom-height {
+    height: 230px;
+  }
+  
+  .custom-top-position {
+    top: 40px;
+    left: 12px;
+  }
+  .custom-left-position {
+    top: 20px;
+    left: 12px;
+  }
+  
+  .welcomUser-img {
+  height: 48px;
+    width: 48px;
+  
+    position: absolute;
+    border: 2px solid white;
+    top: 70px;
+    left: 16px;
+  }
+  
+  .rank {
+  padding: 5px;
+  color: rgb(255, 153, 0);
+  background-color: #fef8ed;
+  border: 1px solid rgb(255, 153, 0);
+  border-radius: 50%;
+  }
+  .rank2 {
+    padding: 5px 6px;
+    color: #8e69f4;
+    background-color: #f3effe;
+    border: 1.5px solid #8e69f4;
+    border-radius: 50%;
+    }
+  .custom-bg-green {
+    background-color: #caeeed;
+  }
+  
+  .rank1 {
+    padding: 5px 8px ;
+    color: #30b9b4;
+    background-color: #caeeed;
+    border: 1px solid #30b9b4;
+    border-radius: 50%;
+    }
+  
+  .circle-step{
+    border-left: 2px dashed  #adb5bd;
+    
+  }
+  
+  .circle-step i{
+   
+    left: -9px;
+    top: 0;
+    
+  }
+  .member-img {
+    height: 37px;
+      width: 37px;
+    
+    }
+  
+    .custom-input span {
+      color: #c3c3c3;
+      top: 10px;
+      left: 8px;
+  
+    }
+  
+    .custom-input input::placeholder {
+      color: #c3c3c3;
+      font-size: 13px;
+      padding-left: 18px;
+    }
+  
+    .today-middle {
+      top: -4px;
+      left: 149px;
+      font-size: 12px;
+    }
+  
+    .send-icon {
+  
+      padding: 8px 8px ;
+      
+      background-color: #8860f5;
+    
+      border-radius: 50%;
+    }
+  
+  
+    .bg-color-reciver {
+      background-color: #f3effe;
+    }
+    .bg-color-sender {
+      background-color: #ebf9f4;
+    }
+  
+    .custom-btn:focus{
+      box-shadow: 0 0 0 0 white;
+    }
+  
+    .coin-logo {
+      height: 20px;
+        width: 20px;
+      
+      }
+ 
