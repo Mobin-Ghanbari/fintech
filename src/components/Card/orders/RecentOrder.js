@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 import {
   Card,
   CardBody,
@@ -6,29 +6,29 @@ import {
   Nav,
   NavItem,
   NavLink,
-  Table,
-} from "reactstrap";
-import OrderItem from "./OrderItem";
+  Table
+} from 'reactstrap'
+import OrderItem from './OrderItem'
 const RecentOrder = () => {
   return (
-    <Card className="mt-4">
+    <Card className='mt-4'>
       <CardBody>
-        <CardTitle className="text-black-50 font fw-bold">
+        <CardTitle className='text-black-50 font fw-bold'>
           Recent Orders
         </CardTitle>
-        <Nav className="bg-light">
+        <Nav className='bg-light'>
           <NavItem>
-            <NavLink className="text-muted fw-bold" href="#">
+            <NavLink className='text-muted fw-bold' href='#'>
               Open Orders
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink className="fw-bold" active href="#">
+            <NavLink className='fw-bold' active href='#'>
               Closed Orders
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink className="text-muted fw-bold" href="#">
+            <NavLink className='text-muted fw-bold' href='#'>
               Trade History
             </NavLink>
           </NavItem>
@@ -48,7 +48,7 @@ const RecentOrder = () => {
               <th>Target 2</th>
               <th>Target 3</th>
               <th>Status</th>
-              <th colSpan="2">Gain</th>
+              <th colSpan='2'>Gain</th>
               <th>Action</th>
             </tr>
           </thead>
@@ -58,7 +58,7 @@ const RecentOrder = () => {
         </Table>
       </CardBody>
     </Card>
-  );
-};
+  )
+}
 
-export default RecentOrder;
+export default RecentOrder

@@ -1,33 +1,33 @@
-var assert = require("assert");
-var webdriver = require("selenium-webdriver");
-require("geckodriver");
-var chrome = require("selenium-webdriver/chrome");
-var path = require("chromedriver").path;
-const serverUri = "http://localhost:3000/#";
-const appTitle = "react1";
-var service = new chrome.ServiceBuilder(path).build();
-chrome.setDefaultService(service);
+const assert = require('assert')
+const webdriver = require('selenium-webdriver')
+require('geckodriver')
+const chrome = require('selenium-webdriver/chrome')
+const path = require('chromedriver').path
+const serverUri = 'http://localhost:3000/#'
+const appTitle = 'react1'
+const service = new chrome.ServiceBuilder(path).build()
+chrome.setDefaultService(service)
 
-var browser = new webdriver.Builder()
+const browser = new webdriver.Builder()
   .withCapabilities(webdriver.Capabilities.chrome())
-  .build();
+  .build()
 
 /**
  * Config for Chrome browser
  * @type {webdriver}
  */
 
-function logTitle() {
+function logTitle () {
   return new Promise((resolve, reject) => {
     browser.getTitle().then(function (title) {
-      resolve(title);
-    });
-  });
+      resolve(title)
+    })
+  })
 }
-it("Should check whether the given element is loaded", function () {
-  browser.get(serverUri);
+it('Should check whether the given element is loaded', function () {
+  browser.get(serverUri)
   browser
-    .findElement({ id: "sel-button" })
+    .findElement({ id: 'sel-button' })
     .click()
     .then(function () {
       return new Promise((resolve, reject) => {
@@ -35,10 +35,10 @@ it("Should check whether the given element is loaded", function () {
 
           .then(logTitle)
           .then((title) => {
-            assert.equal(title, appTitle);
-            resolve();
+            assert.equal(title, appTitle)
+            resolve()
           })
-          .catch((err) => reject(err));
-      });
-    });
-});
+          .catch((err) => reject(err))
+      })
+    })
+})
